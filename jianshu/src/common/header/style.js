@@ -29,56 +29,103 @@ export const HeaderWrap = styled.nav`
       .normal_text{
          margin-right: 40px;
       }
-      .searchBox{
+      .searchBox_wrap{
          position: relative;
          display: inline-block;
          width: 160px;
-         vertical-align: middle;
-         height: 38px;
-         line-height: 35px;
-         border-radius: 19px;
-         padding: 0 20px;
-         background-color: #eee;
-         &.slide-enter{
-            transition: all .4s ease;
-         }
-         
-         &.slide-enter-active{
-            width: 240px;
-            .icon-fangdajing{
-               background-color: #aaa;
-               color:#fff;
-            }
-         }
-         &.slide-enter-done{
-            width: 240px;
-            .icon-fangdajing{
-               background-color: #aaa;
-               color:#fff;
-            }
-         }
-         &.slide-exit{
-            transition: all .4s ease;
-         }
-         
-         input{
+         .searchBox{
+            position: relative;
             width: 100%;
-            border: none;
+            vertical-align: middle;
+            height: 38px;
+            line-height: 35px;
+            border-radius: 19px;
+            padding: 0 20px;
             background-color: #eee;
-            &::placeholder{
-               color: #aaa;
+         
+            &.slide-enter{
+               transition: all .4s ease;
+            }
+            
+            &.slide-enter-active{
+               width: 240px;
+               .icon-fangdajing{
+                  background-color: #aaa;
+                  color:#fff;
+               }
+            }
+            &.slide-enter-done{
+               width: 240px;
+               .icon-fangdajing{
+                  background-color: #aaa;
+                  color:#fff;
+               }
+            }
+            &.slide-exit{
+               transition: all .4s ease;
+            }
+            input{
+               width: 100%;
+               border: none;
+               background-color: #eee;
+               &::placeholder{
+                  color: #aaa;
+               }
+            }
+            .icon-fangdajing{
+               position: absolute;
+               top: 5px;
+               right: 6px;
+               width: 28px;
+               height: 28px;
+               line-height: 30px;
+               border-radius: 50%;
+               text-align:center;
+               color:#969696;
             }
          }
-         .icon-fangdajing{
-            position: absolute;
-            top: 5px;
-            right: 6px;
-            width: 28px;
-            height: 28px;
-            line-height: 30px;
-            border-radius: 50%;
-            text-align:center;
-            color:#969696;
+         .hot_search{
+            position: absolute; 
+            width: 250px;
+            top: 46px;
+            left:0;
+            padding: 20px;
+            line-height: 1;
+            box-shadow: 0 0 8px rgba(0,0,0,.2);
+            color: #787878;
+            .hot_search_head{
+               display: flex;
+               justify-content: space-between;
+               color: #969696;
+               margin-bottom: 10px;
+               .hot_search_head_title{
+                  font-size: 14px;
+               }
+               .hot_search_head_button{
+                  font-size: 13px;
+                  .icon-cycle{
+                     display: inline-block;
+                     font-size: 14px;
+                     margin-right: 2px;
+                     transition: all 0.2s ease-out;
+                     transform-origin: center center;
+                     transform: rotate(30deg);
+                  }
+               }
+            }
+            .hot_search_body{
+               font-size: 12px;
+               line-height: 28px;
+               .hot_search_item{
+                  display: inline-block;
+                  padding: 2px 6px;
+                  margin-right: 10px;
+                  line-height: 1;
+                  border: 1px solid #ddd;
+                  border-radius: 3px;
+                  color: #787878;
+               }
+            }
          }
       }
    }
