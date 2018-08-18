@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import logoSrc from '../../static/img/logo.png'
+// import logoSrc from '../../static/img/logo.png'
 
 // styled用于创建带样式的标签，并输出为组件。
 // 使用类似stylus语法
@@ -13,8 +13,9 @@ export const HeaderWrap = styled.nav`
       position: absolute;
       left: 0;
       top: 0;
-      background: url(${logoSrc});
-      background-size: 100%;
+      img{
+         width: 100%;
+      }
    }
    .nav_left{
       width: 945px;
@@ -92,6 +93,7 @@ export const HeaderWrap = styled.nav`
             padding: 20px;
             line-height: 1;
             box-shadow: 0 0 8px rgba(0,0,0,.2);
+            background-color: #fff;
             color: #787878;
             .hot_search_head{
                display: flex;
